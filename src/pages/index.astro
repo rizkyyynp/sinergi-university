@@ -1,0 +1,18 @@
+---
+import News from "../components/Berita/News.astro";
+import "../style/base.css";
+import Mahasiswa from "../components/Mahasiswa/Mahasiswa.astro";
+import Dosen from "../components/Dosen/Dosen.astro";
+import Mitra from "../components/Mitra/Mitra.astro";
+import "boxicons/css/boxicons.min.css";
+import EventSection from "../components/Events/EventSection.jsx";
+import MainLayout from "../Layouts/MainLayout.astro";
+---
+
+<MainLayout title="HomePage">
+  <EventSection client:load />
+  <News />
+  <Mahasiswa />
+  <Dosen />
+  <Mitra />
+</MainLayout>

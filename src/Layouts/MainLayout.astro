@@ -1,0 +1,25 @@
+---
+const { title, children } = Astro.props;
+import Navbar from "../components/Header/Navbar.astro";
+import Footer from "../components/Footers/Footer.astro";
+import "../style/base.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <script
+      src="https://kit.fontawesome.com/4eeddc5c62.js"
+      crossorigin="anonymous"></script>
+    <title>Sinergi University | {title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+</html>

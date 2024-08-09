@@ -1,0 +1,128 @@
+---
+import { Image } from "astro:assets";
+import Asset1 from "../../assets/asset1.jpg";
+import Asset2 from "../../assets/asset2.jpg";
+import Asset3 from "../../assets/asset3.jpg";
+import Asset4 from "../../assets/asset4.jpg";
+import Asset5 from "../../assets/asset5.jpg";
+---
+
+<!-- src\components\Berita\News.astro -->
+<section class="relative min-h-[636px] py-10 px-5 lg:px-20">
+  <div class="absolute inset-0 bg-cover bg-center bg-hero-pattern"></div>
+  <div class="absolute inset-0 bg-white opacity-90 z-10"></div>
+  <div class="relative z-20">
+    <div class="flex justify-center items-center">
+      <h5
+        class="text-2xl text-secondary font-semibold relative inline-block after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-line1 after:bottom-[-5px] after:left-0 after:right-0"
+      >
+        Berita Terbaru
+      </h5>
+    </div>
+    <div class="flex flex-col lg:flex-row mt-10 lg:gap-2">
+      <div class="w-full lg:w-1/2 flex mb-5">
+        <div
+          class="flex flex-col gap-2.5"
+        >
+          <Image
+            src={Asset1}
+            alt="Image1"
+            class="w-full h-full lg:h-100 object-cover rounded-lg"
+          />
+          <div class="flex flex-col gap-2.5">
+            <h6 class="font-semibold text-secondary text-xl">
+              <a href="/eventDetails">
+              Port Worker Portray the Reality of Bottlenecks
+              </a>
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-base text-secondary font-normal">21 Sept 2023</h6>
+              <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-base text-secondary font-normal">
+                Oleh John Doe
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div
+          class="flex flex-row lg:flex-col h-20 items-center lg:h-56 lg:items-start"
+        >
+          <Image
+            src={Asset2}
+            alt="Image 2"
+            class="w-20 h-full lg:w-full lg:h-36 object-cover rounded-lg"
+          />
+          <div class="flex flex-col ml-2 lg:ml-0">
+            <h6 class="font-semibold text-secondary text-base">
+              Your Must-Read Roadmap to Optimize for New HTS Codes
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-sm text-secondary font-normal">21 Sept 2023</h6>
+              <h6 class="text-lg text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-sm text-secondary font-normal">Oleh John Doe</h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-row lg:flex-col h-20 items-center lg:h-56 lg:items-start"
+        >
+          <Image
+            src={Asset3}
+            alt="Image3"
+            class="w-20 h-full lg:w-full lg:h-36 object-cover rounded-lg"
+          />
+          <div class="flex flex-col ml-2 lg:ml-0">
+            <h6 class="font-semibold text-secondary text-base">
+              Transpacific Shifts: Import Demand Is CHanging the World...
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-sm text-secondary font-normal">21 Sept 2023</h6>
+              <h6 class="text-lg text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-sm text-secondary font-normal">Oleh John Doe</h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-row lg:flex-col h-20 items-center lg:h-56 lg:items-start"
+        >
+          <Image
+            src={Asset4}
+            alt="Image 4"
+            class="w-20 h-full lg:w-full lg:h-36 object-cover rounded-lg"
+          />
+          <div class="flex flex-col ml-2 lg:ml-0">
+            <h6 class="font-semibold text-secondary text-base">
+              IMF World Economic Outlook Revises Growth ForeCasts
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-sm text-secondary font-normal">21 Sept 2023</h6>
+              <h6 class="text-lg text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-sm text-secondary font-normal">Oleh John Doe</h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-row lg:flex-col h-20 items-center lg:h-56 lg:items-start"
+        >
+          <Image
+            src={Asset5}
+            alt="Image 5"
+            class="w-20 h-full lg:w-full lg:h-36 object-cover rounded-lg"
+          />
+          <div class="flex flex-col ml-2 lg:ml-0">
+            <h6 class="font-semibold text-secondary text-base">
+              We're moving Masks for NHS Heroes and we need your support.
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-sm text-secondary font-normal">21 Sept 2023</h6>
+              <h6 class="text-lg text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-sm text-secondary font-normal">Oleh John Doe</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

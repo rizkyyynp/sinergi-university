@@ -1,0 +1,114 @@
+---
+import { Image } from "astro:assets";
+import IdFlag from "../../assets/id.png";
+import UKFlag from "../../assets/uk.jpg";
+---
+
+<!-- Bagian Pertama (bg-slate-100) -->
+<div
+  class="bg-slate-100 px-5 lg:px-20 h-15 justify-between items-center hidden md:flex w-full fixed top-0 z-50"
+>
+  <div class="flex gap-4">
+    <div class="flex gap-1">
+      <Image src={IdFlag} alt="Indonesian Flag" width={32} height={22} />
+      <h1>ID</h1>
+    </div>
+    <div class="flex gap-1">
+      <Image src={UKFlag} alt="UK Flag" width={32} height={22} quality={100} />
+      <h1>UK</h1>
+    </div>
+  </div>
+  <div>
+    <h1 class="text-base font-semibold text-primary">Login to UC Learning</h1>
+  </div>
+</div>
+
+<!-- Bagian Navbar -->
+<div class="navbar-container">
+  <input type="checkbox" id="menu" class="hidden" />
+  <header
+    class="bg-primary p-5 h-17 lg:px-20 lg:py-2.5 lg:h-20 fixed w-full flex justify-between items-center md:top-[60px] z-40"
+  >
+    <div class="flex flex-row items-center gap-1">
+      <i class="fa-solid fa-graduation-cap text-white text-xl md:text-3xl"></i>
+      <div class="flex flex-col">
+        <h1 class="max-md:text-lg md:text-2xl font-semibold text-white">
+          Sinergi
+        </h1>
+        <span class="max-md:text-base md:text-lg text-white">University</span>
+      </div>
+    </div>
+    <nav
+      class="flex gap-5 max-md:gap-6 max-md:absolute max-md:top-16 max-md:left-0 max-md:bg-base-100 max-md:flex-col max-md:w-full max-md:items-center max-md:h-0 max-md:transition-all max-md:duration-500 max-md:overflow-hidden max-md:pt-4"
+    >
+      <a
+        href="/"
+        class="relative inline-block text-white font-bold text-base transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-1/2 after:bg-white after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 uppercase max-md:text-primary max-md:after:bg-primary"
+        >Home</a
+      >
+      <div class="relative group">
+        <button
+          class="relative inline-block text-white font-bold text-base transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-1/2 after:bg-white after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 uppercase max-md:text-primary max-md:after:bg-primary items-center"
+        >
+          Akademik <i class="fas fa-caret-down ml-1"></i>
+        </button>
+        <ul
+          class="absolute left-0 mt-1 w-40 bg-white shadow-lg rounded-md overflow-hidden z-10 max-md:-left-32 max-md:w-96 group-hover:flex hidden flex-col"
+        >
+          <li>
+            <a
+              href="/"
+              class="block px-4 py-2 text-sm text-primary hover:bg-gray-100 font-bold"
+              >Akademik</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="block px-4 py-2 text-sm text-primary hover:bg-gray-100 font-bold"
+              >Akademik</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="block px-4 py-2 text-sm text-primary hover:bg-gray-100 font-bold"
+              >Akademik</a
+            >
+          </li>
+        </ul>
+      </div>
+      <a
+        href="/"
+        class="relative inline-block text-white font-bold text-base transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-1/2 after:bg-white after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 uppercase max-md:text-primary max-md:after:bg-primary"
+        >Admisi</a
+      >
+      <a
+        href="/"
+        class="relative inline-block text-white font-bold text-base transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-1/2 after:bg-white after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 uppercase max-md:text-primary max-md:after:bg-primary"
+        >Beasiswa</a
+      >
+      <a
+        href="/"
+        class="relative inline-block text-white font-bold text-base transition-all duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-[-5px] after:left-1/2 after:bg-white after:transition-all after:duration-300 hover:after:w-full hover:after:left-0 uppercase max-md:text-primary max-md:after:bg-primary"
+        >Tentang Kami</a
+      >
+    </nav>
+    <div class="flex items-center md:hidden">
+      <label
+        for="menu"
+        class="cursor-pointer max-md:w-11 max-md:h-5 max-md:relative"
+      >
+        <div
+          class="max-md:w-full max-md:h-1 max-md:bg-white max-md:absolute max-md:rounded-full max-md:transition-all max-md:duration-300"
+        ></div>
+        <div
+          class="max-md:w-full max-md:h-1 max-md:bg-white max-md:absolute max-md:rounded-full max-md:transition-all max-md:duration-300 max-md:top-1/2"
+        ></div>
+        <div
+          class="max-md:w-full max-md:h-1 max-md:bg-white max-md:absolute max-md:rounded-full max-md:transition-all max-md:duration-300 max-md:top-full"
+        ></div>
+      </label>
+    </div>
+  </header>
+</div>

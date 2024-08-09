@@ -1,0 +1,185 @@
+---
+import MainLayout from "../Layouts/MainLayout.astro";
+import "boxicons/css/boxicons.min.css";
+import { Image } from "astro:assets";
+import Asset1 from "/public/assets/asset1.jpg";
+---
+
+<MainLayout title="Event Details">
+  <div class="bg-white pt-[80px] md:pt-36 lg:pt-[150px] px-5 lg:px-20">
+    <div class="flex gap-3">
+      <h3 class="text-base font-normal text-title2">Berita</h3>
+      <h3><i class="bx bx-chevron-right text-foots2"></i></h3>
+      <h3 class="text-base font-normal text-foots2">
+        Port Workers Portray the Reality of Bottlenecks
+      </h3>
+    </div>
+    <section class="py-10 min-h-screen flex flex-col lg:flex-row lg:gap-10 ">
+      <div class="w-full lg:max-w-[736px] flex mb-10">
+        <div class="flex flex-col gap-2.5 w-full">
+          <h6 class="font-semibold text-secondary text-xl">
+            <a href="/eventDetails">
+              Port Worker Portray the Reality of Bottlenecks
+            </a>
+          </h6>
+          <div class="flex items-center">
+            <h6 class="text-base text-secondary font-normal">21 Sept 2023</h6>
+            <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+            <h6 class="text-base text-secondary font-normal">Oleh John Doe</h6>
+          </div>
+          <Image
+            src={Asset1}
+            alt="Image1"
+            class="w-full h-full lg:h-100 object-cover rounded-lg"
+          />
+          <div class="lg:mt-10">
+            <p class="text-secondary">
+              Lorem ipsum dolor sit amet consectetur. Eu egestas amet venenatis
+              volutpat. Ultricies orci sagittis quis mi. Arcu nulla nibh lacinia
+              vulputate molestie sed odio. Diam ultricies ipsum dolor cursus
+              gravida viverra. Vestibulum ultrices dolor quam ut quis in
+              blandit. At odio integer scelerisque orci tellus mi curabitur.<br
+              /><br />Nisi facilisis dolor purus massa lacus sit. Libero est
+              elementum egestas adipiscing. Ultrices volutpat malesuada pharetra
+              aenean nunc fames est. Fusce orci in tortor ultricies diam id. Sed
+              lacus et quam malesuada. Erat molestie sit at amet sit aliquet
+              massa nulla aliquam. In erat integer etiam interdum. Aliquet amet
+              aliquam aliquam id est nulla sem malesuada pulvinar. Fames tempor
+              lobortis aliquam accumsan. Mus congue senectus amet a vehicula
+              facilisis porttitor. Mauris leo ipsum urna ac auctor tincidunt
+              purus semper.<br /><br /> Aliquet morbi turpis tellus dictum nunc tempus
+              arcu turpis. Libero quam volutpat facilisis hac semper imperdiet diam
+              donec in. Sagittis non massa tellus morbi quisque. Adipiscing in ultricies
+              turpis adipiscing aliquet felis nisl eget. Malesuada in faucibus blandit
+              nunc tellus arcu tristique vitae viverra. Eget nunc amet etiam senectus
+              urna duis egestas eget ullamcorper. Rhoncus dolor mauris vitae turpis
+              elementum scelerisque. Ipsum odio semper porttitor quis tincidunt nec.
+              Pellentesque purus ornare at nullam adipiscing nec duis. Morbi pellentesque
+              mi ut aliquam id scelerisque. Ornare dignissim vitae ipsum arcu dictum
+              odio integer. Ornare tellus nisi lacus duis luctus.<br /><br /> Duis
+              ullamcorper amet amet ut. Facilisi sapien consequat in nec iaculis
+              in lectus est. Aliquam nibh tellus orci turpis erat leo donec non.
+              Et purus aliquam nam urna. Eget quam augue sapien laoreet pretium augue.
+              Feugiat et sit senectus erat convallis habitant. Quisque vestibulum
+              risus adipiscing imperdiet vivamus congue tincidunt tellus at. Eget
+              nunc posuere risus cras mollis sit eu vel. Tellus consequat rhoncus
+              gravida quisque in eget. Maecenas ipsum pharetra quis sed. Nunc placerat
+              viverra sit quis. Id lectus ullamcorper sed suspendisse varius tristique.
+              Quam placerat egestas suspendisse nisi. Blandit et viverra nisl augue
+              et. Elementum posuere condimentum facilisis ante viverra. Enim eget
+              vestibulum mi sagittis donec. Tellus rhoncus massa posuere feugiat
+              sed adipiscing in habitant sodales. Ipsum odio id quisque mauris sit
+              pulvinar viverra nec in. Mi nisl venenatis sagittis et vulputate pretium
+              mi ut. Nisi urna suspendisse senectus netus dignissim ultrices mus.
+              Ut fames dignissim id nibh purus dictum. At nunc vel in sed diam in
+              interdum. Molestie rhoncus egestas tristique id quis amet sed.
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="text-sm text-secondary font-bold">Share</h3>
+            <div class="flex flex-row space-x-3 mt-2">
+              <div
+                class="w-8 h-8 rounded-full bg-icons flex justify-center items-center"
+              >
+                <i class="fa-brands fa-linkedin-in text-white"></i>
+              </div>
+              <div
+                class="w-8 h-8 rounded-full bg-icons flex justify-center items-center"
+              >
+                <i class="fa-brands fa-instagram text-white"></i>
+              </div>
+              <div
+                class="w-8 h-8 rounded-full bg-icons flex justify-center items-center"
+              >
+                <i class="fa-brands fa-whatsapp text-white"></i>
+              </div>
+              <div
+                class="w-8 h-8 rounded-full bg-icons flex justify-center items-center"
+              >
+                <i class="fa-brands fa-twitter text-white"></i>
+              </div>
+              <div
+                class="w-8 h-8 rounded-full bg-icons flex justify-center items-center"
+              >
+                <i class="fa-solid fa-share-nodes text-white"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full lg:max-w-[344px] flex flex-col max-h-[579px]">
+        <div class="flex justify-center md:justify-start">
+            <h6 class="text-xl text-secondary font-semibold ">Berita Terkait</h6>
+        </div>
+        <div class="flex flex-col  w-full">
+          <div class="flex flex-col  h-28 p-3">
+            <h6 class="font-semibold text-secondary text-xl">
+                Your Must-Read Roadmap to Optimize for New HTS Codes
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-base text-secondary font-normal"><i class="fa-regular fa-user"></i> Dibimbing.id</h6>
+              <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-base text-secondary font-normal">
+                <i class="fa-regular fa-calendar-days"></i>
+                26 Sep 2022
+              </h6>
+            </div>
+          </div>
+          <div class="flex flex-col h-28 p-3">
+            <h6 class="font-semibold text-secondary text-xl">
+                Your Must-Read Roadmap to Optimize for New HTS Codes
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-base text-secondary font-normal"><i class="fa-regular fa-user"></i> Dibimbing.id</h6>
+              <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-base text-secondary font-normal">
+                <i class="fa-regular fa-calendar-days"></i>
+                26 Sep 2022
+              </h6>
+            </div>
+          </div>
+          <div class="flex flex-col h-28 p-3">
+            <h6 class="font-semibold text-secondary text-xl">
+                Your Must-Read Roadmap to Optimize for New HTS Codes
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-base text-secondary font-normal"><i class="fa-regular fa-user"></i> Dibimbing.id</h6>
+              <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-base text-secondary font-normal">
+                <i class="fa-regular fa-calendar-days"></i>
+                26 Sep 2022
+              </h6>
+            </div>
+          </div>
+          <div class="flex flex-col h-28 p-3">
+            <h6 class="font-semibold text-secondary text-xl">
+                Your Must-Read Roadmap to Optimize for New HTS Codes
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-base text-secondary font-normal"><i class="fa-regular fa-user"></i> Dibimbing.id</h6>
+              <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-base text-secondary font-normal">
+                <i class="fa-regular fa-calendar-days"></i>
+                26 Sep 2022
+              </h6>
+            </div>
+          </div>
+          <div class="flex flex-col h-28 p-3">
+            <h6 class="font-semibold text-secondary text-xl">
+                Your Must-Read Roadmap to Optimize for New HTS Codes
+            </h6>
+            <div class="flex items-center">
+              <h6 class="text-base text-secondary font-normal"><i class="fa-regular fa-user"></i> Dibimbing.id</h6>
+              <h6 class="text-xl text-secondary font-bold mx-1">•</h6>
+              <h6 class="text-base text-secondary font-normal">
+                <i class="fa-regular fa-calendar-days"></i>
+                26 Sep 2022
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</MainLayout>
